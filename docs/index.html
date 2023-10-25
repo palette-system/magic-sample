@@ -19,8 +19,8 @@
 $(function(){
     $("#write_firm").click(function() {
         azesp.write_firm([
-        {"address": 0x0000, "data": "./data/s3/azmagicpad.ino.bootloader.bin"},
-        {"address": 0x8000, "data": "./data/s3/azmagicpad.ino.partitions.bin"},
+        {"address": 0x0000, "data": "./data/azmagicpad.ino.bootloader.bin"},
+        {"address": 0x8000, "data": "./data/azmagicpad.ino.partitions.bin"},
         {"address": 0xe000, "data": "./data/boot_app0.bin"},
         {"address": 0x10000, "data": "./data/azmagicpad.ino.bin"}
         ], 921600, "write_info");
